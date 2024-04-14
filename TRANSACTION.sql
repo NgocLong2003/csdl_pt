@@ -1,15 +1,21 @@
 SET XACT_ABORT ON
 BEGIN TRY
-	BEGIN TRAN; --start transaction
-	INSERT INTO [New_Employee_Payroll_N].[dbo].[Employee] 
-		VALUES ('N111','Yen','Tran','19-FEB-23','N','HR', NEWID()); --this line is correct, can run
+	BEGIN TRANSACTION; --start transaction
+	INSERT INTO [Employee_Payroll_N].[dbo].[Employee] 
+		VALUES ('N109','Yen','Tran','19-FEB-23','N','HR', NEWID()); --this line is correct, can run
 	
 	--INSERT INTO [New_Employee_Payroll_N].[dbo].[Employee] 
 	--	VALUES ('N106','Ha','Tran','22-DEC-22','N','QC', NEWID()); --this line is wrong because there already exist ID = N106
-	
-	SELECT * FROM [New_Employee_Payroll_N].[dbo].[Employee]
+	--UPDATE [Employee_Payroll_N].[dbo].[Employee] 
+	--SET First_Name = 'Ha', Last_Name = 'Tran'
+	--where Employee_ID = 'N109';
+
+	--DELETE FROM [Employee_Payroll_N].[dbo].[Employee]
+	--where Employee_ID = 'N109';
+
+	SELECT * FROM [Employee_Payroll_N].[dbo].[Employee]
 		
-		COMMIT TRAN;
+		COMMIT TRANSACTION;
 END TRY
 BEGIN CATCH
 	SELECT --execute exception corrisponding
