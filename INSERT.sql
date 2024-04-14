@@ -70,8 +70,8 @@ INSERT INTO Employee_Attendance VALUES ('E103','E88');
 INSERT INTO Employee_Attendance VALUES ('W101','W95');
 INSERT INTO Employee_Attendance VALUES ('W102','W95');
 INSERT INTO Employee_Attendance VALUES ('W103','W95');
-INSERT INTO Employee_Attendance VALUES ('N101','N82');
-INSERT INTO Employee_Attendance VALUES ('N102','N83');
+INSERT INTO Employee_Attendance VALUES ('S101','S82');
+INSERT INTO Employee_Attendance VALUES ('S102','S83');
 
 INSERT INTO DepartmentProject VALUES ('HR','21');
 INSERT INTO DepartmentProject VALUES ('SD','22');
