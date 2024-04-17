@@ -23,12 +23,6 @@ INSERT INTO Employee VALUES ('W103','Uyen','Hoang','19-OCT-21','W','QC');
 INSERT INTO Employee VALUES ('S101','Tien','Le','31-MAY-21','S','MF');
 INSERT INTO Employee VALUES ('S102','Anh','Ngo','24-DEC-20','S','QC');
 
-INSERT INTO Project VALUES ('21','Dev','Whatever');
-INSERT INTO Project VALUES ('22','Prod','do something');
-INSERT INTO Project VALUES ('23','Test','focus');
-INSERT INTO Project VALUES ('24','Nothing','do nothing');
-INSERT INTO Project VALUES ('25','Research','focus on everything');
-INSERT INTO Project VALUES ('26','Next Steps','find some way out');
 
 INSERT INTO AccountDetails VALUES ('AN101','MB Bank','S12344','N101');
 INSERT INTO AccountDetails VALUES ('AN102','VP Bank','S12345','N102');
@@ -41,23 +35,14 @@ INSERT INTO AccountDetails VALUES ('AW103','TP Bank','C12334','W103');
 INSERT INTO AccountDetails VALUES ('AS101','VP Bank','C12378','S101');
 INSERT INTO AccountDetails VALUES ('AS102','MB Bank','C12390','S102');
 
-INSERT INTO Education VALUES ('10','N101','MS',2017);
-INSERT INTO Education VALUES ('11','N102','MS',2019);
-INSERT INTO Education VALUES ('12','E102','MS',2011);
-INSERT INTO Education VALUES ('13','W103','MS',2015);
-INSERT INTO Education VALUES ('14','S101','Bachelor',2013);
-INSERT INTO Education VALUES ('15','W102','Bachelor',2008);
-INSERT INTO Education VALUES ('16','W101','Bachelor',2007);
 
-
-
-INSERT INTO Attendance VALUES ('N90',10);
-INSERT INTO Attendance VALUES ('N91',20);
-INSERT INTO Attendance VALUES ('E87',30);
-INSERT INTO Attendance VALUES ('E88',40);
-INSERT INTO Attendance VALUES ('W95',45);
-INSERT INTO Attendance VALUES ('N82',56);
-INSERT INTO Attendance VALUES ('N83',58);
+INSERT INTO Attendance VALUES ('N90',10, '14-APR-24');
+INSERT INTO Attendance VALUES ('N91',20, '14-MAR-24');
+INSERT INTO Attendance VALUES ('E87',30, '14-MAY-24');
+INSERT INTO Attendance VALUES ('E88',40, '14-JUN-24');
+INSERT INTO Attendance VALUES ('W95',45, '14-JUL-24');
+INSERT INTO Attendance VALUES ('N82',56, '14-APR-24');
+INSERT INTO Attendance VALUES ('N83',58, '14-DEC-24');
 
 
 
@@ -73,25 +58,6 @@ INSERT INTO Employee_Attendance VALUES ('W103','W95');
 INSERT INTO Employee_Attendance VALUES ('S101','S82');
 INSERT INTO Employee_Attendance VALUES ('S102','S83');
 
-INSERT INTO DepartmentProject VALUES ('HR','21');
-INSERT INTO DepartmentProject VALUES ('SD','22');
-INSERT INTO DepartmentProject VALUES ('DA','23');
-INSERT INTO DepartmentProject VALUES ('DS','24');
-INSERT INTO DepartmentProject VALUES ('BI','25');
-INSERT INTO DepartmentProject VALUES ('DE','26');
-INSERT INTO DepartmentProject VALUES ('MF','21');
-INSERT INTO DepartmentProject VALUES ('QC','24');
-
-INSERT INTO Salary VALUES (1,57600,30,200,1000,'AN101');
-INSERT INTO Salary VALUES (2,76800,40,300,1300,'AN102');
-INSERT INTO Salary VALUES (3,96000,50,400,1500,'AE101');
-INSERT INTO Salary VALUES (4,115200,60,500,1700,'AE102');
-INSERT INTO Salary VALUES (5,57600,30,200,1000,'AE103');
-INSERT INTO Salary VALUES (6,76800,40,300,1300,'AW101');
-INSERT INTO Salary VALUES (7,96000,50,400,1500,'AW102');
-INSERT INTO Salary VALUES (8,115200,60,500,1700,'AW103');
-INSERT INTO Salary VALUES (9,57600,30,200,1000,'AS101');
-INSERT INTO Salary VALUES (10,76800,40,300,1300,'AS102');
 
 
 

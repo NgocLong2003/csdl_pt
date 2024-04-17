@@ -10,5 +10,17 @@ BEGIN
 END
 GO
 
-
 EXECUTE dbo.Employee_Worked_Hours
+
+
+CREATE PROCEDURE pro1 --function
+
+AS
+BEGIN
+	SELECT * FROM Employee
+END
+GO
+
+EXECUTE pro1
+
+

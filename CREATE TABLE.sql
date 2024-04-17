@@ -52,48 +52,24 @@ CREATE TABLE History_Employee(
   );
 
   CREATE TABLE Salary(
-  Salary_Id INT,
-  Gross_Salary INT,
+  Salary_Id varchar(25), --varchar
   Hourly_Pay INT,
-  State_Tax INT,
-  Federal_Tax INT,
+  MONTH_PAY INT,
+  YEAR_PAY INT,
+  TAX_PERCENT INT,
   Account_Id VARCHAR(25),
+  Worked_Hours INT, -- derived
+  Gross_Salary INT, --derived
+  NET INT, --derived (100%-Tax_percent) * worked_hours
   CONSTRAINT SALARY_PK PRIMARY KEY (Salary_Id),
   FOREIGN KEY (Account_Id)
         REFERENCES ACCOUNTDETAILS(Account_Id)
   );
-  
-  CREATE TABLE Project(
-  Project_Id VARCHAR(25),
-  Project_Name VARCHAR(50),
-  Project_Description VARCHAR(50),
-  CONSTRAINT Project_PK PRIMARY KEY (Project_Id)
-  );
 
-  CREATE TABLE DepartmentProject(
-  Department_Id VARCHAR(25),
-  Project_Id VARCHAR(25),
-  CONSTRAINT DEPTPROJECT_PK PRIMARY KEY (Department_Id,Project_Id),
-  FOREIGN KEY (Department_Id)
-        REFERENCES Department(Department_Id),
-  FOREIGN KEY (Project_Id)
-        REFERENCES Project(Project_Id)
-  );
-
-  CREATE TABLE Education(
-  Education_Id VARCHAR(25),
-  Employee_Id VARCHAR(25),
-  Degree VARCHAR(30),
-  Graduation_Year INT,
-  CONSTRAINT Location_PK PRIMARY KEY (Education_Id),
-  FOREIGN KEY (Employee_Id)
-        REFERENCES Employee(Employee_Id)
-  );
-  
-  
-  CREATE TABLE Attendance(
-  Attendance_Id VARCHAR(25),
+   CREATE TABLE Attendance(
+  Attendance_Id VARCHAR(25) not null,
   Hours_Worked INT,
+  Date_time datetime -- GROUP BY MONTH(Date_time). SUM(HOURS_WORKED)
   CONSTRAINT Attendance_PK PRIMARY KEY (Attendance_Id)
   );
   

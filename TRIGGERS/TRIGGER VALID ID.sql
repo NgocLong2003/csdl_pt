@@ -25,3 +25,13 @@ AS
 		END
 
 GO
+
+
+CREATE TRIGGER trigger1
+	on dbo.salary
+	AFTER INSERT, UPDATE
+
+	AS
+		
+	
+
